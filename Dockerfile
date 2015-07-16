@@ -19,8 +19,8 @@ RUN mkdir -p /var/log/jenkins
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Copy list of plugins and install
-COPY plugins.txt /usr/share/jenkins/plugins.txt
-RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
+# COPY plugins.txt /usr/share/jenkins/plugins.txt
+# RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 
 # Install Docker from Docker Inc. repositories.
 RUN echo deb https://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list \
