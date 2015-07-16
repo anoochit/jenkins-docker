@@ -1,0 +1,4 @@
+locale:1.2
+git:2.3.5
+github:1.11.3
+docker-build-publish:1.0
